@@ -1,0 +1,41 @@
+{% extends "index.html" %} {% block content %}
+<body style="background-color:#EC9350; font-family: 'DM Sans', sans-serif;">
+
+<form method="post" class="chat-form">
+
+    <h1 class="mt-5 mb-5" style="color: #FEFEFF; font-size: 50px;">Welcome to SocialSphere</h1>
+
+    <h3 class="text-center" style="color: #FEFEFF;">Start a new room and invite friends </br>with your unique code,
+    </br>or enter a room code to join a chat.</h3>
+
+    <div class="row mt-5">
+        <div class="col-sm-6 mb-3 mb-sm-0">
+          <div class="card text-center" style="width: 22rem; height: 15em; border-radius: 25px;">
+            <div class="card-body" style="background-color: #F5F5F4; border-radius: 25px;">
+              <h3 class="card-title mt-4 mb-4">Create new room</h3>
+              <input class="mb-2" type="text" placeholder="Enter your name" name="name" value="{{name}}"/>
+              <button type="submit" name="create-room" class="create-room">Create Room</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card text-center" style="width: 22rem; height: 15em; border-radius: 25px;">
+            <div class="card-body" style="background-color: #F5F5F4; border-radius: 25px;">
+              <h3 class="card-title mt-4 mb-4">Join existing room</h3>
+              <input class="mb-2" type="text" placeholder="Room code" name="code" value="{{code}}"/>
+              <button type="submit" name="join-room" class="join-room">Join Room</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    {% if error %}
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{error}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endif %}
+
+</form>
+{% endblock %}
