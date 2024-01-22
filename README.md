@@ -1,8 +1,6 @@
-Online chat app made with Python, Flask and SocketIO. Main features include creating new chat rooms, and joining rooms with secret codes. 
-
 # BookBuddy
 
-Real time full stack chat app. Allows users to create chat rooms or join existing ones with unique room codes. 
+Real time full stack chat app using Socket.IO. Allows users to create chat rooms or join existing ones with unique room codes. 
 
 ## Tech Stack
 
