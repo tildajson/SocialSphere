@@ -7,10 +7,7 @@ Real time full stack chat app. Allows users to create chat rooms or join existin
 ## Tech Stack
 
 + Python
-+ Javascript
-+ Django
-+ Bootstrap
-
++ Flask
 
 ## Screenshots
 
